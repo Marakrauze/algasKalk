@@ -1,0 +1,12 @@
+1. ievadam summu, atzīmējam vai ir grāmatiņa un viņš aprēķina algu.
+procenti algas aprēķinam nav īstie, bet funkcionāli viss strādā.
+
+
+2. bija problēma ar to, ka browser visu laiku refresho lapu, 
+tāpēc neiet PHP, jo JS kodā ir ielikta rinda  event.preventDefault();
+citādi JS to summu nesaglabā, bet viņa parādas un uzreiz pazūd.
+Kad izņem to  event.preventDefault();, tad PHP alerts par ievadiet summu
+strādā, bet kalkulators izrēķinot atkal tikai uz īsu brīdi parāda summu
+un tad viņa uzreiz pazūd. tur kaut kur ir konflikts- nemācēju salabot
+tāpēc tur tagad tas PHP alerts par to, ka jāievada summa pirms submit
+fiziski ir, bet neiet dēļ tā  event.preventDefault();
